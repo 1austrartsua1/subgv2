@@ -1,7 +1,7 @@
 % regular regression
 clear all
 close all
-%helloworld
+%goodbyeCruelWorld
 m=550;
 d=100;
 B=randn(m,d);
