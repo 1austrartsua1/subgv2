@@ -27,12 +27,8 @@
 
 clear all;close all;
 %format long
-at_CSL=1;
-if(at_CSL)
-   addpath(genpath('C:\Users\prjohns2.UOFI\Dropbox\MATLAB_F14on\Work_By_Semester\Fall16\SubGradientExps'));
-else
-   addpath(genpath('C:\Users\Pat\Dropbox\MATLAB_F14on\Work_By_Semester\Fall16\SubGradientExps')); 
-end
+addpath(genpath(''));
+
 m=100;
 dim=50;
 E=randn(m,dim);
