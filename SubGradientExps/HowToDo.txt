@@ -1,0 +1,5 @@
+This link is helpful: https://help.ubuntu.com/lts/serverguide/git.html
+
+From Linux end: 1) edit files. 2) cd to /home/pj222/gitFolders/subG/subgv2 3) Type: git commit -a -m '<name of commit>' 4) git push origin master
+
+From windows end: use the github gui. Make sure you add a summary before committing. Then push.
