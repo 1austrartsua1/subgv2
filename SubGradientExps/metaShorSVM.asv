@@ -1,0 +1,25 @@
+function [d,f] = metaShorSVM(c_0,G,Omega_1,C,y,m,tau,x_init,x_opt,M,eps)
+   c = c_0;
+   d = [];
+   f = [];
+   x = x_init;
+   phi = acos(c/G);
+   T = ceil((log((sin(phi))^(-1)))^(-1)*log(Omega_1/(cos(phi)*eps)));
+   for i=1:M
+       T
+       size(y
+       fprintf('running Shor2 iteration %d\n',i);
+       
+       [dnew,fnew,xnew] = Shor_SVM(c,G,Omega_1,tau,x,T,x_opt,C,y,m);
+                          
+          
+       d = [d, dnew];
+       f = [f, fnew];
+       c = c/2;
+       phi = acos(c/G);
+       T = ceil((log((sin(phi))^(-1)))^(-1)*log(Omega_1/(cos(phi)*eps)));
+       x = xnew;
+       
+   
+   end
+

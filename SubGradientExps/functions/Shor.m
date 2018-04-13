@@ -1,5 +1,8 @@
-function [d_sq,f,hs] = Shor(c_theta,B,p_1,E,b,tau,x_init,T,x_opt)
-phi = acos(c_theta/B);
+function [d_sq,f,xout] = Shor(c_theta,B,p_1,E,b,tau,x_init,T,x_opt)
+                           
+   phi = acos(c_theta/B);
+
+
 %step2 compute h_1
 % and step3 compute r(phi)
 if(phi<pi/4)
@@ -23,3 +26,4 @@ for k=1:(T)
   hs(k)=h_kp1;
   h_k = h_kp1;
 end
+xout = x_k;
