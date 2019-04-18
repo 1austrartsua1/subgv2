@@ -28,3 +28,4 @@ function g=subg(w,A,b,m,n)
 end
 
 %what the funk
+%what the actual funk
